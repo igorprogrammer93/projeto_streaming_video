@@ -175,16 +175,11 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            display: block;
-            text-align: center;
-            margin-top: 10px;
 
             @media (max-width: 768px) {
                 position: relative;
                 left: 0;
                 width: 100%;
-                display: block;
-                margin: 0 auto;
             }
         }
     }
