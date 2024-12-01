@@ -144,6 +144,8 @@ body {
 
     @media (max-width: 768px) {
         display: block;
+        flex-direction: column;
+        text-align: center;
     }
 
     img {
@@ -180,6 +182,11 @@ body {
                 position: relative;
                 left: 0;
                 width: 100%;
+                top: auto;
+                margin-top: 16px;
+            }
+            h2{
+                font-size: 18px;
             }
         }
     }
