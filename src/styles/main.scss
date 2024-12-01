@@ -143,20 +143,47 @@ body {
     align-items: center;
 
     @media (max-width: 768px) {
-        display: block;
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        text-align: center; /* Garante centralização */
+        padding: 20px; /* Ajusta espaçamento geral */
     }
 
     img {
         max-width: 100%;
+        height: auto;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px; /* Espaço entre imagem e texto */
+        }
     }
 
     &__text_container {
         padding: 0 2vw;
 
+        @media (max-width: 768px) {
+            padding: 0;
+            margin-top: 10px; /* Espaço entre os elementos */
+        }
+
         h2 {
             margin-bottom: 24px;
+
+            @media (max-width: 768px) {
+                font-size: 22px; /* Texto maior para mobile */
+                line-height: 1.4;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            color: variaveis.$corTextoPrincipal;
+
+            @media (max-width: 768px) {
+                font-size: 14px; /* Texto reduzido para telas menores */
+                line-height: 1.4;
+            }
         }
     }
 
@@ -169,24 +196,13 @@ body {
         }
 
         &__text_container {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            height: 100%;
-            width: calc(50% - 5.6vw);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            position: relative;
+            top: auto;
+            left: auto;
+            height: auto;
 
             @media (max-width: 768px) {
-                position: relative;
-                left: 0;
                 width: 100%;
-                top: auto;
-                margin-top: 16px;
-            }
-            h2{
-                font-size: 18px;
             }
         }
     }
