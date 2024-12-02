@@ -15,6 +15,15 @@
         margin-top: -55px;
     }
 
+    @media (max-width: 1024px) and (min-width: 769px) {
+            background-image: url(../images/hero_tablet.png); /* Imagem específica para tablet */
+            padding-top: calc(40vw + 30px); /* Ajuste proporcional ao tamanho do tablet */
+            background-size: cover; /* Cobre toda a largura */
+            background-repeat: no-repeat;
+            margin-top: -45px; /* Ajuste de margem superior */
+        }
+    
+
     .button {
         margin-top: 2vw;
         margin-bottom: 8px;
